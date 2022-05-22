@@ -1,0 +1,51 @@
+[
+    {
+    "description": "A Carpenter is a construction professional who works with construction crews to build, adjust and repair wood frameworks in various construction projects. They work with their hands, using tools to build and install frameworks that last a lifetime!",
+    "available_quantity":2000,
+    "minimum_quantity":200,
+      "picture": "https://i.ibb.co/FD6ydzG/carpenter.jpg",
+      "price": 5000,
+      "name": "Carpenter"
+    },
+    {
+      "description": "The Hydraulic hammer is a construction equipment that is used for the demolition of a structure and breaking rocks into smaller sizes. It is an attachment on an excavator and works on the principle of hydraulics. It applies high pressure from its small canister which has pressurized hydraulic oil stored in it.",
+      "available_quantity":4000,
+      "minimum_quantity":1000,
+      "picture": "https://i.ibb.co/VYKBH0h/hydraulic-hammer.jpg",
+      "price": 4000,
+      "name": "Hydraulic Hammer"
+    },
+    {
+        "description": "screwdriver, tool, usually hand-operated, for turning screws with slotted heads. For screws with one straight diametral slot cut across the head, standard screwdrivers with flat blade tips and in a variety of sizes are used.",
+        "available_quantity":2000,
+        "minimum_quantity":600,
+      "picture": "https://i.ibb.co/jMg3zVp/wrench-screwdriver-hammer.jpg",
+      "price": 2000,
+      "name": "Wrench Screwdriver Hammer"
+    },
+    {
+        "description": "A tool for digging, having an iron blade adapted for pressing into the ground with the foot and a long handle commonly with a grip or crosspiece at the top, and with the blade usually narrower and flatter than that of a shovel.",
+      "available_quantity":1000,
+      "minimum_quantity":500,
+      "picture": "https://i.ibb.co/d0J5LP7/spade.webp",
+      "price":2000,
+      "name": "Spade"
+    },
+    {
+        "description": "Screwdrivers are a type of hand tool used for the insertion and removal of screws. They are available in a multitude of variations to correspond to the correct screw drive. The drive or head of a screw has a shaped cavity and protrusion that fits the screwdriver tip.",
+        "available_quantity":3000,
+        "minimum_quantity":1000,
+      "picture": "https://i.ibb.co/CHtHsMk/Screwdriver.jpg",
+      "price": 1000,
+      "name": "Screwdriver"
+    },
+    {
+        "description": "The most basic use for a claw hammer is driving nails into materials. This could include something as simple as pounding in a nail to hang a picture or as involved as installing studs to frame out a room. The flat, rounded side enables you to drive nails perfectly.",
+        "available_quantity":1000,
+        "minimum_quantity":500,
+      "picture": "https://i.ibb.co/Y3djnmt/hammer-nails-isolated.webp",
+      "price": 1500,
+      "name": "Hammer Nails Isolated"
+    }
+    
+  ]

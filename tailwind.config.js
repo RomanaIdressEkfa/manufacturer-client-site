@@ -12,7 +12,7 @@ module.exports = {
           "info": "#0CA6E9",
           "success": "#2BD4BD",
           "warning": "#F4C152",
-          "error": "#FB6F84",
+          "error": "#DE7D8C",
         },
 
       },
@@ -35,7 +35,7 @@ module.exports = {
 
           "warning": "#F4C152",
 
-          "error": "#FB6F84",
+          "error": "#0CA6E9",
         },
       },
     ],
