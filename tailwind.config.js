@@ -6,7 +6,7 @@ module.exports = {
         light: {
           "primary": "#0F1729",
           "secondary": "#828DF8",
-          "accent": "#F471B5",
+          "accent": "#868e96",
           "neutral": "#0F1729",
           "base-100": "#FFFFFF",
           "info": "#0CA6E9",
@@ -23,7 +23,7 @@ module.exports = {
 
           "secondary": "#F4C152",
 
-          "accent": "#F471B5",
+          "accent": "#868e96",
 
           "neutral": "#1D283A",
 
@@ -35,7 +35,7 @@ module.exports = {
 
           "warning": "#F4C152",
 
-          "error": "#0CA6E9",
+          "error": "#9775fa",
         },
       },
     ],

@@ -13,6 +13,7 @@ import Services from './Pages/Services/Services';
 import RequireAuth from './Pages/Login/RequireAuth';
 import AdminRoute from './Pages/Login/AdminRoute';
 import Dashboard from './Pages/Dashboard/Dashboard';
+import NotFound from './Pages/Shared/NotFound';
 
 function App() {
   useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
           <Route path='/blog' element={<Blog></Blog>}></Route>
           <Route path='/login' element={<Login></Login>}></Route>
           <Route path='/signup' element={<SignUp></SignUp>}></Route>
+          <Route path='*' element={<NotFound></NotFound>}></Route>
 
           <Route element={<RequireAuth></RequireAuth>}>
             <Route path='/services' element={<Services></Services>}></Route>
