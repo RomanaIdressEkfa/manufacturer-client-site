@@ -3,9 +3,9 @@
 [GO TO LIVE WEBSITE](https://assignment-database-c9093.web.app/).
 
 ## Some features 
-* You can see inventory in inventory page.
-* You can manage your inventory.
-* You can edit your inventory.
+* You can see Business Summary.
+* You can see Equipment Products From Database.
+* You can get profiles from the dashboard
 * You can delete your inventory.
 * You can create your account.
 * You can add your own products.
@@ -13,7 +13,7 @@
 
 
 ### Description
-* This is a fashion house website. You can buy or sell dress. you can login with facebook, Google or email password. Can you can see all inventory. You can manage your inventory , like edit delete etc.
+* This website has 6 services it has login form and register form Order ,Delete , Price services are available IN website we show has some dynamic review users can register and login users can see dashbord in details when then click details button
 
 #### What technology or assets I have used for building this website.
 * React.js
