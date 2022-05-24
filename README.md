@@ -5,9 +5,9 @@
 ## Some features 
 * You can see Business Summary.
 * You can see Equipment Products From Database.
-* You can get profiles from the dashboard
-* You can delete your inventory.
-* You can create your account.
+* You can get profile from the dashboard.
+* You can get MyOrders from the dashboard.
+* You can get Review from the dashboard.
 * You can add your own products.
 * You can see your added products.
 
