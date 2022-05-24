@@ -14,6 +14,9 @@ import RequireAuth from './Pages/Login/RequireAuth';
 import AdminRoute from './Pages/Login/AdminRoute';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import NotFound from './Pages/Shared/NotFound';
+import Profile from './Pages/Dashboard/Profile';
+import MyOrder from './Pages/Dashboard/MyOrder';
+import Review from './Pages/Dashboard/Review';
 
 function App() {
   useEffect(() => {
@@ -27,6 +30,9 @@ function App() {
           <Route path='/blog' element={<Blog></Blog>}></Route>
           <Route path='/login' element={<Login></Login>}></Route>
           <Route path='/signup' element={<SignUp></SignUp>}></Route>
+          <Route path='/profile' element={<Profile></Profile>}></Route>
+          <Route path='/myorder' element={<MyOrder></MyOrder>}></Route>
+          <Route path='/review' element={<Review></Review>}></Route>
           <Route path='*' element={<NotFound></NotFound>}></Route>
 
           <Route element={<RequireAuth></RequireAuth>}>
