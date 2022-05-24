@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../Shared/Footer';
 
 
 const Blog = () => {
@@ -40,6 +41,7 @@ const Blog = () => {
                 </div>
                 <br />
             </div>
+            <Footer></Footer>
 
         </div>
 

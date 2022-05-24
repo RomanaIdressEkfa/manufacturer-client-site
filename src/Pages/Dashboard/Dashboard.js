@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import DashboardHome from './DashboardHome';
+import Footer from '../Shared/Footer';
 const Dashboard = () => {
     return (
         <div>
@@ -14,12 +14,11 @@ const Dashboard = () => {
                         <li><NavLink to='/profile' className='rounded-lg'>Profile</NavLink></li>
                         <li><NavLink to='/myorder' className='rounded-lg'>MyOrders</NavLink></li>
                         <li><NavLink to='/review' className='rounded-lg'>Review</NavLink></li>
-
-
                     </ul>
 
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     );
 };

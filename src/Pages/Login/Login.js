@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import Loading from '../Shared/Loading';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import logo from '../../assets/images/background.jpg'
+// import Footer from '../Shared/Footer';
 
 const Login = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -100,6 +101,7 @@ const Login = () => {
                     <button onClick={() => signInWithGoogle()} className="btn btn-outline">Continue with google</button>
                 </div>
             </div >
+            {/* <Footer></Footer> */}
         </div >
     );
 };
