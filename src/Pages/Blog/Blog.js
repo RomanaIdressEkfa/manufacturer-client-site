@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../Shared/Footer';
 
 
 const Blog = () => {
@@ -8,14 +7,17 @@ const Blog = () => {
             <div className="col-md-9 mx-auto w-10/12  ">
                 <div className='bg-accent p-4 text-black'>
                     <h4 className='font-bold'>How will you improve the performance of a React Application?</h4>
-                    JavaScript is a programming language but NodeJS is a JavaScript runtime environment. Javascript used for client-side and it is frontend development but NodeJS used for server-side and it is server-side development.JavaScript is a simple programming language that runs in any browser JavaScript Engine. Whereas Node JS is an interpreter or running environment for a JavaScript programming language that holds many excesses, it requires libraries that can easily be accessed from JavaScript programming for better use.
+                    Keeping component state local where necessary. Memoizing React components to prevent unnecessary re-renders. Code-splitting React using dynamic import. Windowing or list virtualization in React.Ignore Lazy loading images in React
 
                 </div>
 
                 <div className=" mt-5 bg-accent  p-4 text-black">
                     <h4 className='font-bold'>What are the different ways to manage a state in a React application?</h4>
-                    SQL databases are primarily called RDBMS or Relational Databases But,NoSQL databases are primarily called as Non-relational or distributed database. SQL databases are table-based and NoSQL databases are document, key-value, graph, or wide-column stores.SQL means Structured query language(SQL) but,NoSQL is no declarative query language.
-                    SQL databases are vertically scalable but,NoSQL databases are horizontally scalable
+                    There are 4 different ways for manage a state in React application.
+                    1. Local state.
+                    2. Global state.
+                    3. Server state.
+                    4. URL state.
                 </div>
                 <div className=" mt-5 bg-accent  p-4 text-black">
                     <h2 className='font-bold'> How does prototypical inheritance work?</h2>
@@ -23,16 +25,14 @@ const Blog = () => {
                 </div>
                 <div className=" mt-5 bg-accent  p-4 text-black">
                     <h2 className='font-bold'>Why you do not set the state directly in React. For example, if you have const [products, setProducts] = useState([]). Why you do not set products = [...] instead, you use the setProducts?</h2>
-                    <p>Node. js is primarily used for non-blocking, event-driven servers, due to its single-threaded nature. It's used for traditional web sites and back-end API services, but was designed with real-time, push-based architectures in mind. So when we need to do backend development, that's a good time for use Nodejs.
-                        <br />
-                        MongoDB facilitate to store database in json(javascript object notation) (or simply when data in form of key value pair) this is very fast and efficient so you should use it when you have key value pair to store(json data)
+                    <p>One should never update the state directly because of the following reasons: If you update it directly, calling the setState() afterward may just replace the update you made. When you directly update the state, it does not change this.
                     </p>
 
                 </div>
                 <div className=" mt-5 bg-accent  p-4 text-black">
                     <h4 className='font-bold'>You have an array of products. Each product has a name, price, description, etc. How will you implement a search to find products by name?</h4>
-                    SQL databases are primarily called RDBMS or Relational Databases But,NoSQL databases are primarily called as Non-relational or distributed database. SQL databases are table-based and NoSQL databases are document, key-value, graph, or wide-column stores.SQL means Structured query language(SQL) but,NoSQL is no declarative query language.
-                    SQL databases are vertically scalable but,NoSQL databases are horizontally scalable
+                    You can use the Array.prototype.filter function which takes a callback and filters accordingly. Per the documentation: The filter() method creates a new array with all elements that pass the test implemented by the provided function. The callback, which is the provided function, takes three arguments. From the documentation: callback Function is a predicate, to test each element of the array. Return true to keep the element, false otherwise, taking three arguments: element The current element being processed in the array. index The index of the current element being processed in the array. array The array filter was called upon. We may use element to check the current element and test if it should be filtered or not, like so:
+                    Here, we use a callback (the test) that checks if the current element (obj)'s property specified in filter is strictly equal to keyword. If it passes, it is kept, and thus all objects with property Level with vale Standard are kept. You can also shorten this with ES6 arrow functionsThis is just shorthand for the above. It is effectively the same, returning true or false based on if the current element's Level property is strictly equal to keyword.
                 </div>
                 <div className=" mt-5 bg-accent  p-4 text-black">
                     <h4 className='font-bold'>What is a unit test? Why should write unit tests?</h4>
@@ -41,7 +41,6 @@ const Blog = () => {
                 </div>
                 <br />
             </div>
-            <Footer></Footer>
 
         </div>
 

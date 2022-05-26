@@ -4,7 +4,6 @@ import CardGlass from './CardGlass';
 import Hero from './Hero';
 import StatUi from './StatUi';
 import background from '../../assets/images/back.jpg'
-import Footer from '../Shared/Footer';
 
 const HomePage = () => {
     return (
@@ -13,7 +12,6 @@ const HomePage = () => {
             <Services></Services>
             <CardGlass></CardGlass>
             <StatUi></StatUi>
-            <Footer></Footer>
         </div>
     );
 };

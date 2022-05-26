@@ -1,26 +1,56 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import Footer from '../Shared/Footer';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { Helmet } from 'react-helmet-async';
+import { Link, Outlet } from 'react-router-dom';
+import auth from '../../firebase.init';
+
+// import useAdmin from '../Hooks/useAdmin';
+
 const Dashboard = () => {
+    const [user] = useAuthState(auth);
+    const admin = 'admin';
     return (
-        <div>
-            <div class="drawer drawer-mobile mt-20 bg-slate-600">
-                <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
-                <div class="drawer-content flex flex-col items-center justify-center">
+        <section>
+            <Helmet>
+                <title>Dashboard - Digitaz LTD.</title>
+            </Helmet>
+            <div class="drawer drawer-mobile">
+                <input id="dashboard-sidebar" type="checkbox" class="drawer-toggle" />
+                <div class="drawer-content">
+                    <Outlet></Outlet>
                 </div>
-                <div class="drawer-side">
-                    <label for="my-drawer-2" class="drawer-overlay"></label>
-                    <ul class="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
-                        <li><NavLink to='/profile' className='rounded-lg'>Profile</NavLink></li>
-                        <li><NavLink to='/myorder' className='rounded-lg'>MyOrders</NavLink></li>
-                        <li><NavLink to='/review' className='rounded-lg'>Review</NavLink></li>
+                <div class="drawer-side z-0">
+                    <label for="dashboard-sidebar" class="drawer-overlay"></label>
+                    <ul class="menu p-4 overflow-y-auto w-48 bg-base-100 text-base-content font-bold">
+
+                        <li><Link to="/dashboard/profile">My Profile</Link></li>
+
+                        {
+                            admin && <li><Link to="/dashboard/myorders">My Orders</Link></li>
+                        }
+                        {
+                            admin && <li><Link to="/dashboard/review">Add A Review</Link></li>
+                        }
+                        {
+                            admin && <li><Link to="/dashboard/orders">Manage All Orders</Link></li>
+                        }
+
+                        {
+                            admin && <li><Link to="/dashboard/addProduct">Add A Product</Link></li>
+                        }
+                        {
+                            admin && <li><Link to="/dashboard/manageProducts">Manage Products</Link></li>
+                        }
+                        {
+                            admin && <li><Link to="/dashboard/makeAdmin">Make Admin</Link></li>
+                        }
+
                     </ul>
 
                 </div>
             </div>
-            <Footer></Footer>
-        </div>
-    );
+        </section>
+    )
 };
 
 export default Dashboard;
