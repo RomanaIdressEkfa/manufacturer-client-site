@@ -4,6 +4,7 @@ import CardGlass from './CardGlass';
 import Hero from './Hero';
 import StatUi from './StatUi';
 import background from '../../assets/images/back.jpg'
+import ReviewPage from './ReviewPage';
 
 const HomePage = () => {
     return (
@@ -11,6 +12,7 @@ const HomePage = () => {
             <Hero></Hero>
             <Services></Services>
             <CardGlass></CardGlass>
+            <ReviewPage></ReviewPage>
             <StatUi></StatUi>
         </div>
     );

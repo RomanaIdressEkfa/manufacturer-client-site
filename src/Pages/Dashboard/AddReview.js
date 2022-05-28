@@ -16,7 +16,7 @@ const AddReview = () => {
         const name = user?.displayName;
         const review = { review: ratings, description, img, name }
 
-        fetch('https://powerful-fjord-17237.herokuapp.com/review', {
+        fetch('http://localhost:5000/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -32,8 +32,8 @@ const AddReview = () => {
     }
 
     return (
-        <div>
-            <h3 className='text-2xl text-center font-bold my-8'><span className=' border-b-2 border-primary'>Add Review</span></h3>
+        <div className='bg-'>
+            <h3 className='text-3xl text-center font-bold my-8'><span className=' border-b-2 border-primary'>Add Review</span></h3>
             <form
                 onSubmit={handleAddReview}
                 className='grid grid-cols-1 gap-3 justify-items-center mt-2'>

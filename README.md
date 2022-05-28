@@ -1,6 +1,6 @@
 # Manufacturing Industry ....
 
-[GO TO LIVE WEBSITE](https://assignment-database-c9093.web.app/).
+[GO TO LIVE WEBSITE](https://manufacturer-client-website.firebaseapp.com/).
 
 ## Some features 
 * You can see Business Summary.

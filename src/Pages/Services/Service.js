@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Service = (props) => {
-    const { name, price, picture, description, available_quantity, minimum_quantity } = props.service;
+    const { name, price, picture, description, available_quantity, minimum_quantity, _id } = props.service;
     return (
         <div className='p-5 mx-auto shadow-lg rounded-2xl w-10/12 bg-blue-400'>
             <img className='w-80 h-64 mx-auto' src={picture} alt="" />
@@ -12,7 +13,7 @@ const Service = (props) => {
 
             <h1 > <span className='font-bold'> Description:</span> {description}</h1>
             <div>
-                <button className='btn btn-primary font-bold uppercase bg-gradient-to-r from-error to-accent text-white mx-auto m-2'>Book Now</button>
+                <Link to={`/perseus/${_id} `} className='btn btn-primary font-bold uppercase bg-gradient-to-r from-error to-accent text-white mx-auto m-2'>Book Now</Link>
             </div>
         </div>
 

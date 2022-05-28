@@ -23,8 +23,8 @@ import ManageProducts from './Pages/Dashboard/ManageProducts'
 import AddProduct from './Pages/Dashboard/AddProduct'
 import ManageOrders from './Pages/Dashboard/ManageOrders'
 import { HelmetProvider } from 'react-helmet-async';
-
-
+import Purseus from './Pages/Purseus/Purseus';
+import Portfolio from './Pages/Blog/Portfolio';
 function App() {
   useEffect(() => {
     AOS.init();
@@ -36,8 +36,10 @@ function App() {
           <Routes>
             <Route path='/' element={<HomePage></HomePage>}></Route>
             <Route path='/blog' element={<Blog></Blog>}></Route>
+            <Route path='/portfolio' element={<Portfolio></Portfolio>}></Route>
             <Route path='/login' element={<Login></Login>}></Route>
             <Route path='/signup' element={<SignUp></SignUp>}></Route>
+            <Route path='/perseus/:id' element={<Purseus></Purseus>}></Route>
             <Route path='*' element={<NotFound></NotFound>}></Route>
             <Route element={<RequireAuth></RequireAuth>}>
               <Route path='/services' element={<Services></Services>}></Route>

@@ -2,21 +2,17 @@ import React, { Children, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import UseAdmin from '../Hooks/UseAdmin';
 import logo from '../../assets/images/hamber.jpg'
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
+import { signOut } from 'firebase/auth';
 
 const Navbar = ({ children }) => {
     const [dark, setDark] = useState(false)
-    console.log(dark);
     const [admin] = UseAdmin();
-    // <li><Link to="/">Home</Link></li>
-    //     <li><Link to="/Appointment">Appointment</Link></li>
-    //     <li><Link to="/reviews">Reviews</Link></li>
-    //     <li><Link to="/contactus">Contact Us</Link></li>
-    //     <li><Link to="/about">About</Link></li>
-    //     <li>{user ? <button className="btn btn-ghost" onClick={logout}>SignOut</button> : <Link to="/login">Login</Link>}</li>
-    // const [user, loading, error] = useAuthState(auth);
-    // const logout = () => {
-    //     signOut(auth);
-    // }
+    const [user] = useAuthState(auth);
+    const logout = () => {
+        signOut(auth);
+    }
     return (
         <div class="drawer drawer-end" data-theme={dark ? 'dark' : 'light'}>
             <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
@@ -40,9 +36,12 @@ const Navbar = ({ children }) => {
                                 <li><NavLink to='/dashboard' className='rounded-lg'>Dashboard</NavLink></li>)
                             }
 
-                            <li><NavLink to='/services' className='rounded-lg'>Services</NavLink></li>
+                            <li><NavLink to='/portfolio' className='rounded-lg'>Portfolio</NavLink></li>
                             <li><NavLink to='/blog' className='rounded-lg'>Blog</NavLink></li>
-                            <li><NavLink to='/login' className='rounded-lg'>Login</NavLink></li>
+                            {
+                                !user ? <li><NavLink to='/login' className='rounded-lg'>Login</NavLink></li> : <button onClick={logout}>SignOut</button>
+                            }
+
                             <label class="swap swap-rotate">
 
                                 <input type="checkbox" onClick={() => setDark(!dark)} />
