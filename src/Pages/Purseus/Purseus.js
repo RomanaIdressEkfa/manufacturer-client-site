@@ -15,7 +15,7 @@ const Purseus = () => {
     const [order, setOrder] = useState(null);
     const [price, setPrice] = useState(0);
 
-    const { data: product, isLoading, error } = useQuery('purcess', () => fetch(`http://localhost:5000/product/${id}`).then(res => res.json()))
+    const { data: product, isLoading, error } = useQuery('purcess', () => fetch(`https://obscure-headland-49513.herokuapp.com/product/${id}`).then(res => res.json()))
 
 
     if (isLoading) {

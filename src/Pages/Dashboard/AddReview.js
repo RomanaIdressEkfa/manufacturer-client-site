@@ -16,7 +16,7 @@ const AddReview = () => {
         const name = user?.displayName;
         const review = { review: ratings, description, img, name }
 
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://obscure-headland-49513.herokuapp.com/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

@@ -1,6 +1,4 @@
 import React from 'react';
-
-
 const Blog = () => {
     return (
         <div className="row mt-32 ">
