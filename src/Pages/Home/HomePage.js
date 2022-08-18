@@ -1,20 +1,37 @@
 import React from 'react';
-import Services from '../Services/Services';
+
 import CardGlass from './CardGlass';
 import Hero from './Hero';
 import StatUi from './StatUi';
-import background from '../../assets/images/back.jpg'
+import background from '../../assets/images/back2.jpg'
 import ReviewPage from './ReviewPage';
+import Footer from '../Shared/Footer';
+
+import Products from './Products';
+import Card from './Card';
+import Heros from './Heros';
+import Logins from './Logins';
+import InputBox from './InputBox';
 
 const HomePage = () => {
     return (
-        <div className='' style={{ backgroundImage: `url(${background})` }}>
+        <div className=''>
+            {/* <div class="hero--media-container">
+                <video autoplay="" class="hero--video-background" controlslist="nodownload" loop="" muted="" playsinline="" poster="https://static.istockphoto.com/display-sets/istock/homepage/hero/iStock-829060978_optimized.jpg" src="https://static.istockphoto.com/display-sets/istock/homepage/hero/iStock-829060978_optimized.mp4"></video></div> */}
+            {/* <div className='' style={{ backgroundImage: `url(${background})` }}> */}
             <Hero></Hero>
-            <Services></Services>
+            <Products></Products>
             <CardGlass></CardGlass>
-            <ReviewPage></ReviewPage>
-            <StatUi></StatUi>
+            <Card></Card>
+            <Heros></Heros>
+            {/* <StatUi></StatUi> */}
+
+            {/* <ReviewPage></ReviewPage> */}
+            {/* <InputBox></InputBox> */}
+            <Logins></Logins>
+            <Footer></Footer>
         </div>
+        // </div >
     );
 };
 

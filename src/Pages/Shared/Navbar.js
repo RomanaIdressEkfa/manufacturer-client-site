@@ -8,7 +8,6 @@ import { signOut } from 'firebase/auth';
 
 const Navbar = ({ children }) => {
     const [dark, setDark] = useState(false)
-    const [admin] = UseAdmin();
     const [user] = useAuthState(auth);
     const logout = () => {
         signOut(auth);
@@ -29,18 +28,15 @@ const Navbar = ({ children }) => {
                         </label>
                     </div>
 
-                    <div class="flex-none hidden lg:block">
+                    <div class="flex-none hidden lg:block md:hidden">
                         <ul class="menu menu-horizontal gap-x-2">
                             <li><NavLink to='/' className='rounded-lg'>HomePage</NavLink></li>
-                            {admin && (
-                                <li><NavLink to='/dashboard' className='rounded-lg'>Dashboard</NavLink></li>)
-                            }
-
                             <li><NavLink to='/portfolio' className='rounded-lg'>Portfolio</NavLink></li>
                             <li><NavLink to='/blog' className='rounded-lg'>Blog</NavLink></li>
                             {
                                 !user ? <li><NavLink to='/login' className='rounded-lg'>Login</NavLink></li> : <button onClick={logout}>SignOut</button>
                             }
+                            {/* <img class="mask mask-circle" src={user.display} /> */}
 
                             <label class="swap swap-rotate">
 

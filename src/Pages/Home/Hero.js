@@ -36,7 +36,7 @@ const Hero = () => {
                     <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
                 </div>
                 <div className='flex items-center justify-center mt-6'>
-                    <PrimaryButton ></PrimaryButton>
+                    <button class="btn btn-primary">Get Started</button>
                 </div>
             </div>
             <br />

@@ -35,7 +35,7 @@ module.exports = {
 
           "warning": "#F4C152",
 
-          "error": "#9775fa",
+          "error": "#F4C152",
         },
       },
     ],
