@@ -1,13 +1,11 @@
 import React from 'react';
-
+import './Loading.css';
 const Loading = () => {
     return (
-        <div className='h-screen flex justify-center items-center'>
-            <div className="spinner-border animate-spin inline-block w-12 h-12 border-4 rounded-full" role="status">
-                <span className="visually-hidden"></span>
-            </div>
+        <div className='hero min-h-screen lg:max-w-md mx-auto max-w-sm'>
+            <div><span className="loader"></span></div>
         </div>
     );
 };
 
-export default Loading; 
+export default Loading;

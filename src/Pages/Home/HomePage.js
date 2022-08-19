@@ -6,12 +6,12 @@ import StatUi from './StatUi';
 import background from '../../assets/images/back2.jpg'
 import ReviewPage from './ReviewPage';
 import Footer from '../Shared/Footer';
-
 import Products from './Products';
 import Card from './Card';
 import Heros from './Heros';
 import Logins from './Logins';
 import InputBox from './InputBox';
+import CountDown from './CountDown';
 
 const HomePage = () => {
     return (
@@ -24,6 +24,7 @@ const HomePage = () => {
             <CardGlass></CardGlass>
             <Card></Card>
             <Heros></Heros>
+            {/* <CountDown></CountDown> */}
             {/* <StatUi></StatUi> */}
 
             {/* <ReviewPage></ReviewPage> */}
