@@ -1,6 +1,6 @@
 # Manufacturing Industry ....
 
-[GO TO LIVE WEBSITE](https://manufacturer-client-website.firebaseapp.com/).
+[GO TO LIVE WEBSITE](https://majestic-gelato-dc9db2.netlify.app/).
 
 ## Some features 
 * You can see Business Summary.
