@@ -35,8 +35,20 @@
 import React from 'react';
 import logo from '../../assets/images/ekfa-3.png';
 import Footer from '../Shared/Footer';
+import Typewriter from "typewriter-effect";
 
 const Portfolio = () => {
+    // const App= {
+    //   font-family: sans-serif;
+    //   font-weight:800;
+    //   font-size:40px;
+    //   text-align: center;
+    //   display:flex;
+    //   justify-content:center;
+    //   align-items:center;
+    //   min-height:100vh;
+    //   background:green;
+    // }
     return (
         <div className='m-28 mx-auto'>
             <div className='grid grid-cols-1 lg:grid-cols-4 mx-auto'>
@@ -54,7 +66,22 @@ const Portfolio = () => {
 
                 </div>
                 <div className='grid grid-cols-1 md:grid-cols-3 mx-auto'>
-                    <h1 className='text-5xl font-bold m-38'>I am a Frontend Developer</h1>
+                    <div className="text-5xl font-bold">
+                        <Typewriter
+
+                            onInit={(typewriter) => {
+
+                                typewriter
+
+                                    .typeString("Hi! I am Romana Idress Ekfa...")
+
+                                    .pauseFor(1000)
+                                    .deleteAll()
+                                    .typeString("I am Frontend Developer...")
+                                    .start();
+                            }}
+                        />
+                    </div>
                     {/* <img className='' src={logo} alt="" /> */}
                 </div>
 

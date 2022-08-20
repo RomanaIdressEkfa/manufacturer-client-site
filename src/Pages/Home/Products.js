@@ -2,9 +2,16 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import Product from './Product';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from 'react-slick';
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+
+// import Slider from 'react-slick';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import './styles.css';
+import { Autoplay, Pagination, Navigation } from "swiper";
 // import background from './../../assets/images/back3.jpg'
 
 const Products = () => {
@@ -14,40 +21,6 @@ const Products = () => {
             .then(res => res.json())
             .then(data => setProducts(data));
     }, [products]);
-    // const settings = {
-    //     dots: true,
-    //     infinite: false,
-    //     speed: 500,
-    //     slidesToShow: 4,
-    //     slidesToScroll: 4,
-    //     initialSlide: 0,
-    //     responsive: [
-    //         {
-    //             breakpoint: 1024,
-    //             settings: {
-    //                 slidesToShow: 3,
-    //                 slidesToScroll: 3,
-    //                 infinite: true,
-    //                 dots: true
-    //             }
-    //         },
-    //         {
-    //             breakpoint: 600,
-    //             settings: {
-    //                 slidesToShow: 2,
-    //                 slidesToScroll: 2,
-    //                 initialSlide: 2
-    //             }
-    //         },
-    //         {
-    //             breakpoint: 480,
-    //             settings: {
-    //                 slidesToShow: 1,
-    //                 slidesToScroll: 1
-    //             }
-    //         }
-    //     ]
-    // };
 
     return (
         <div className=''>
@@ -60,6 +33,36 @@ const Products = () => {
                 }
             </div>
             {/* </Slider> */}
+            <>
+                <Swiper
+                    effect={"coverflow"}
+                    grabCursor={true}
+                    centeredSlides={true}
+                    slidesPerView={"auto"}
+                    coverflowEffect={{
+                        rotate: 50,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows: true,
+                    }}
+                    autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    }}
+                    pagination={{
+                        clickable: true,
+                    }}
+                    modules={[Autoplay, Pagination, Navigation]}
+                    // modules={[EffectCoverflow, Pagination]}
+                    className="mySwiper"
+                >
+                    {
+                        products.slice(0, 6).map(product => <SwiperSlide> <Product key={product.name} product={product}>
+                        </Product></SwiperSlide>)
+                    }
+                </Swiper>
+            </>
         </div>
     );
 };

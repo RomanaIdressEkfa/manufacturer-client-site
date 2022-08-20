@@ -6,7 +6,6 @@
 
 // const CountDown = () => {
 //     const { register, formState: { errors }, handleSubmit, reset } = useForm();
-
 //     const [value, setValue] = useState(20)
 //     const [min, setMin] = useState(2);
 //     const [hour, setHour] = useState(10);
@@ -104,6 +103,7 @@
 // }
 
 // export default CountDown;
+
 import React from 'react';
 
 const CountDown = () => {
