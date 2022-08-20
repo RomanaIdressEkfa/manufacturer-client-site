@@ -23,47 +23,38 @@ const Products = () => {
     }, [products]);
 
     return (
-        <div className=''>
-            <h1 className='text-5xl font-bold text-center m-5'>Manufactured Weapons</h1>
-            {/* <Slider {...settings}> */}
-            <div className=' grid grid-cols-1 lg:grid-cols-4 mx-auto'>
+        <>
+            <h1 className='text-5xl font-bold text-center m-5 text-error'>Manufactured Weapons</h1>
+            <Swiper
+                effect={"coverflow"}
+                grabCursor={true}
+                centeredSlides={true}
+                slidesPerView={"auto"}
+                coverflowEffect={{
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+                }}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
+                pagination={{
+                    clickable: true,
+                }}
+                modules={[Autoplay, Pagination, Navigation]}
+                // modules={[EffectCoverflow, Pagination]}
+                className="mySwiper"
+            >
                 {
-                    products.slice(0, 4).map(product => <Product key={product.name} product={product}>
-                    </Product>)
+                    products.slice(0, 6).map(product => <SwiperSlide> <Product key={product.name} product={product}>
+                    </Product></SwiperSlide>)
                 }
-            </div>
-            {/* </Slider> */}
-            <>
-                <Swiper
-                    effect={"coverflow"}
-                    grabCursor={true}
-                    centeredSlides={true}
-                    slidesPerView={"auto"}
-                    coverflowEffect={{
-                        rotate: 50,
-                        stretch: 0,
-                        depth: 100,
-                        modifier: 1,
-                        slideShadows: true,
-                    }}
-                    autoplay={{
-                        delay: 2500,
-                        disableOnInteraction: false,
-                    }}
-                    pagination={{
-                        clickable: true,
-                    }}
-                    modules={[Autoplay, Pagination, Navigation]}
-                    // modules={[EffectCoverflow, Pagination]}
-                    className="mySwiper"
-                >
-                    {
-                        products.slice(0, 6).map(product => <SwiperSlide> <Product key={product.name} product={product}>
-                        </Product></SwiperSlide>)
-                    }
-                </Swiper>
-            </>
-        </div>
+            </Swiper>
+        </>
+
     );
 };
 

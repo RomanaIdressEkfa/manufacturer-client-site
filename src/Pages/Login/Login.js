@@ -4,7 +4,7 @@ import auth from '../../firebase.init';
 import { useForm } from "react-hook-form";
 import Loading from '../Shared/Loading';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import logo from '../../assets/images/background.jpg'
+import logo from '../../assets/images/login1.jpg'
 // import Footer from '../Shared/Footer';
 
 const Login = () => {
@@ -37,7 +37,7 @@ const Login = () => {
 
     }
     return (
-        <div className='flex h-screen justify-center items-center bg-error' style={{ backgroundImage: `url(${logo})` }}>
+        <div className='flex h-screen justify-center items-center' style={{ backgroundImage: `url(${logo})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
             {/* <img src={logo} alt="" /> */}
             < div className="card w-96 bg-base-100 shadow-xl mt-16" >
                 <div className="card-body">

@@ -4,7 +4,7 @@ import auth from '../../firebase.init';
 import { useForm } from "react-hook-form";
 import Loading from '../Shared/Loading';
 import { Link, useNavigate } from 'react-router-dom';
-import logo from '../../assets/images/background.jpg'
+import logo from '../../assets/images/login1.jpg'
 // import Footer from '../Shared/Footer';
 
 const SignUp = () => {
@@ -39,7 +39,7 @@ const SignUp = () => {
         navigate('/Appointment');
     }
     return (
-        <div className='flex h-screen justify-center items-center mt-20' style={{ backgroundImage: `url(${logo})` }}>
+        <div className='flex h-screen justify-center items-center mt-20' style={{ backgroundImage: `url(${logo})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
             <div className="card w-96 bg-base-100 shadow-xl">
                 <div className="card-body">
                     <h2 className="text-center font-bold text-2xl">Sign Up</h2>

@@ -1,4 +1,5 @@
 
+
 .swiper {
   width: 100%;
   padding-top: 50px;
@@ -8,8 +9,9 @@
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 300px;
+  width: 400px;
   height: 300px;
+ 
 }
 
 .swiper-slide img {

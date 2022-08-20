@@ -12,7 +12,7 @@ const Card = () => {
     };
     return (
         <div>
-            <h1 className='text-5xl font-bold text-center m-5'>Welcome to card Section</h1>
+            <h1 className='text-5xl font-bold text-center m-5 text-error'>Welcome to card Section</h1>
             <div className='mx-auto ml-12 box-border'>
                 <div className='flex mx-auto  grid grid-cols-1 md:grid-cols-3 gap-2'>
                     <div style={divStyles} className=''>

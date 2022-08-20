@@ -7,7 +7,7 @@ const Hero = () => {
         <>
             <div data-aos="flip-right" data-aos-delay="50"
                 data-aos-duration="1000" class="hero min-h-screen" style={{
-                    background: `url(${logo})`
+                    background: `url(${logo})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'
                 }}>
                 <div class="hero-overlay bg-opacity-60"></div>
                 <div class="hero-content text-center text-neutral-content">
