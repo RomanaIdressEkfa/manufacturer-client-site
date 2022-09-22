@@ -8,7 +8,7 @@ const Product = (props) => {
     };
     const { name, description, picture, minimum_quantity, available_quantity, price } = props.product
     return (
-        <div style={divStyles} className='p-5 mx-auto shadow-lg rounded-2xl w-10/12 bg-blue-100'>
+        <div style={divStyles} className='p-5 mx-auto shadow-lg rounded-2xl w-10/12 bg-blue-300'>
             <img className='w-full h-64 mx-auto' src={picture} alt="" />
             <p><span className='font-bold text-xl'>Minimum Quantity:</span><span className='font-bold'> {minimum_quantity}</span></p>
             <p><span className='font-bold text-xl'>Quantity:</span><span className='font-bold'> {available_quantity}</span></p>

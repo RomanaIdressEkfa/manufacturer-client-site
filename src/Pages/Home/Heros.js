@@ -3,7 +3,7 @@ import logo from '../../assets/images/2.jpg';
 
 const Heros = () => {
     return (
-        <div class=" bg-rose-100">
+        <div class=" bg-rose-200">
             <div class="hero-content flex-col lg:flex-row mx-auto">
                 <img className='w-7/12 h-full rounded' src={logo} />
                 <div>

@@ -31,8 +31,8 @@ const Navbar = ({ children }) => {
                     <div class="flex-none hidden lg:block md:hidden">
                         <ul class="menu menu-horizontal gap-x-2">
                             <li><NavLink to='/' className='rounded-lg'>HomePage</NavLink></li>
-                            <li><NavLink to='/portfolio' className='rounded-lg'>Portfolio</NavLink></li>
-                            <li><NavLink to='/blog' className='rounded-lg'>Blog</NavLink></li>
+                            {/* <li><NavLink to='/portfolio' className='rounded-lg'>Portfolio</NavLink></li>
+                            <li><NavLink to='/blog' className='rounded-lg'>Blog</NavLink></li> */}
                             {
                                 !user ? <li><NavLink to='/login' className='rounded-lg'>Login</NavLink></li> : <button onClick={logout}>SignOut</button>
                             }
@@ -57,8 +57,8 @@ const Navbar = ({ children }) => {
                 <label for="my-drawer-3" class="drawer-overlay"></label>
                 <ul class="menu p-4 overflow-y-auto w-52 bg-base-100">
                     <li><NavLink to='/' className='rounded-lg'>HomePage</NavLink></li>
-                    <li><NavLink to='/services' className='rounded-lg'>Services</NavLink></li>
-                    <li><NavLink to='/blog' className='rounded-lg'>Blog</NavLink></li>
+                    {/* <li><NavLink to='/services' className='rounded-lg'>Services</NavLink></li>
+                    <li><NavLink to='/blog' className='rounded-lg'>Blog</NavLink></li> */}
                     <li><NavLink to='/login' className='rounded-lg'>Login</NavLink></li>
 
                 </ul>

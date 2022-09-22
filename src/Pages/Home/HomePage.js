@@ -27,7 +27,7 @@ const HomePage = () => {
             <CountDown></CountDown>
             {/* <StatUi></StatUi> */}
 
-            {/* <ReviewPage></ReviewPage> */}
+            <ReviewPage></ReviewPage>
             {/* <InputBox></InputBox> */}
             <Logins></Logins>
             <Footer></Footer>

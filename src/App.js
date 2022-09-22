@@ -23,8 +23,8 @@ function App() {
         <Navbar>
           <Routes>
             <Route path='/' element={<HomePage></HomePage>}></Route>
-            <Route path='/blog' element={<Blog></Blog>}></Route>
-            <Route path='/portfolio' element={<Portfolio></Portfolio>}></Route>
+            {/* <Route path='/blog' element={<Blog></Blog>}></Route>
+            <Route path='/portfolio' element={<Portfolio></Portfolio>}></Route> */}
             <Route path='/login' element={<Login></Login>}></Route>
             <Route path='/signup' element={<SignUp></SignUp>}></Route>
             <Route path='*' element={<NotFound></NotFound>}></Route>

@@ -1,9 +1,11 @@
 import React from 'react';
+import logo from './../../assets/images/sky.jpg'
 
 const Logins = () => {
     return (
-        <div class="">
-            <div class="hero-content flex-col lg:flex-row-reverse mx-auto">
+        // <div class="" style={{ backgroundImage: `url(${logo})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+        <div className='bg-rose-200'>
+            <div class="hero-content flex-col lg:flex-row-reverse mx-auto" >
                 <div class="text-center lg:text-left">
                     <h1 class="text-5xl font-bold">Login now!</h1>
                     <p class="py-6">A login page is a web page or an entry page to a website that requires user identification and authentication, regularly performed by entering a username and password combination. Logins may provide access to an entire site or part of a website.</p>

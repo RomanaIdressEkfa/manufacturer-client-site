@@ -31,7 +31,7 @@ const CardGlass = () => {
         //     </div >
         // </div >
 
-        <div className=" bg-rose-100">
+        <div className=" bg-rose-200">
             <div class="hero-content flex-col lg:flex-row-reverse mx-auto">
                 <img className='w-7/12 h-full' src={logo} class="rounded-lg shadow-2xl" />
                 <div>
